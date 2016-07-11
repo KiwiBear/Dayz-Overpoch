@@ -1,0 +1,2 @@
+player playMoveNow "poslouchaniproslovgenerala_CsdrAidlPercMstpSnon_ercTOruceVbok";
+ 

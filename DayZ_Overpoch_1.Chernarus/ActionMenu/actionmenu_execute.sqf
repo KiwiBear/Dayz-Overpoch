@@ -1,0 +1,1 @@
+[] execVM "actionmenu\actionmenu_main.sqf";

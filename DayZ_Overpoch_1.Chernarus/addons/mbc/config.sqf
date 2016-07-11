@@ -1,0 +1,104 @@
+/*
+		Mystery Briefcase addon by Rocu
+		Version 1.1
+		Configuration file
+*/
+
+MBT_NAME = "Mystery Briefcase"; //Name of the item that spawns the reward (this is just a visual thing, code won't break if you change this to something random)
+MBT_CRATEDELAY = 900; //How long until the reward crate disappears (in seconds) Default: 900 (15 minutes)
+MBT_DIALOG_TITLE = "Mystery Briefcase Reward"; //Reward dialog title
+MBT_DIALOG_CLAIM = "Claim Your Reward"; //Claim reward button
+MBT_DIALOG_NOTE = "* After claiming your prize the reward crate will disappear in 15 minutes."; //Notation warning about the crate's delay
+
+
+
+/*
+		REWARD CONFIGURATION
+		Everything that has to do with the prize you get from the briefcase
+*/
+
+// Junk
+_junk_group = ["HandRoadFlare","TrashTinCan","FoodCanUnlabeled","HandChemBlue","HandChemRed","HandChemGreen","ItemBook3","ItemBook4","ItemSodaR4z0rEmpty","ItemSodaDrwasteEmpty","ItemSodaLemonadeEmpty","ItemSodaLvgEmpty","ItemSodaMzlyEmpty","ItemSodaRabbitEmpty","ItemSodaClaysEmpty","TrashJackDaniels","TrashTinCan","ItemLetter","ItemBook1","ItemBook2","ItemTrashRazor","FoodCanOrlokEmpty","FoodCanDemonEmpty","FoodCanTylersEmpty","FoodCanCornEmpty","FoodCanBoneboyEmpty","FoodCanBadguyEmpty","FoodCanGriffEmpty","FoodCanPowellEmpty","FoodCanHerpyEmpty","FoodCanUnlabeledEmpty","FoodCanCurgonEmpty","FoodCanFraggleosEmpty","ItemTrashToiletpaper"];
+_food_group = ["ItemWaterbottle","FoodNutmix","FoodPistachio","FoodMRE","ItemSodaOrangeSherbet","ItemSodaRbull","ItemSodaR4z0r","ItemSodaMdew","ItemSodaPepsi","ItemSodaCoke","FoodbaconCooked","FoodCanBakedBeans","FoodCanFrankBeans","FoodCanPasta","FoodCanSardines","FoodchickenCooked","FoodmuttonCooked","FoodrabbitCooked","ItemTroutCooked","ItemTunaCooked","ItemSeaBassCooked","FoodCanGriff","FoodCanTylers","FoodCanDemon","FoodCanPowell","FoodCanCorn","FoodCanOrlok","FoodCanHerpy","FoodCanBadguy","FoodCanBoneboy","FoodCanCurgon","FoodCanFraggleos","ItemSodaRabbit","ItemSodaMtngreenEmpty","ItemSodaSmashtEmpty","ItemSodaMtngreen","ItemSodaDrwaste","ItemSodaSmasht","ItemSodaClays","ItemSodaLemonade","ItemSodaLvg"];
+
+// Common
+_military_group = ["FlareWhite_M203","FlareGreen_M203","1Rnd_Smoke_M203","HandGrenade_west","HandGrenade_east","SmokeShell","SmokeShellRed","SmokeShellGreen","FoodMRE","Skin_Camo1_DZ","Skin_Rocket_DZ","Skin_Soldier1_DZ","Skin_Drake_Light_DZ"];
+_medical_group = ["ItemAntibiotic","ItemBloodbag","ItemEpinephrine","ItemHeatPack","ItemMorphine","ItemBandage"];
+_vehicle_repair_group = ["PartEngine","PartFueltank","PartGeneric","PartGlass","PartVRotor","PartWheel"];
+_tools_group = ["ItemKeyKit","Binocular","Binocular_Vector","ItemCompass","ItemCrowbar","ItemEtool","ItemFishingPole","ItemFlashlightRed","ItemGPS","ItemHatchet_DZE","ItemKnife","ItemMachete","ItemMatchbox_DZE","ItemToolbox","NVGoggles"];
+
+_common_group = ["ItemPlotDeed","ItemComboLock","ItemSledgeHead","ItemSledgeHandle","Skin_Sniper1_DZ","bulk_ItemSandbag","ItemDocument"];
+_assault_group = ["RH_hk417sgleotech","RH_hk417aim","RH_hk417eotech","RH_hk417saim","RH_hk417seotech","RH_hk417sglaim","RH_m1ssp","RH_m14aim","RH_m14eot","RH_m1sshd","RH_m1staim","RH_m1steot","RH_m1stshd","RH_m1stsp","RH_masaim","RH_sc2shd","RH_masbaim","RH_masbeotech","RH_maseotech","RH_sc2aim","RH_sc2eot","RH_sc2sp","RH_sc2shd","FHQ_ACR_BLK_CCO","FHQ_ACR_BLK_CCO_F","FHQ_ACR_BLK_CCO_GL","FHQ_ACR_BLK_CCO_GL_F","FHQ_ACR_BLK_HWS","FHQ_ACR_BLK_HWS_F","FHQ_ACR_BLK_HWS_GL","FHQ_ACR_BLK_HWS_GL_F","M16A4_ACG","Sa58V_RCO_EP1","SCAR_L_STD_Mk4CQT","M8_sharpshooter","M4A1_HWS_GL_camo","SCAR_L_STD_HOLO","M4A3_CCO_EP1","M4A1_AIM_SD_camo","M16A4","m8_carbine","BAF_L85A2_RIS_Holo","Sa58P_EP1","Sa58V_CCO_EP1","Sa58V_EP1","AKS_74_kobra","AKS_74_U","AKS_GOLD","AK_47_M","AK_74","FN_FAL","FN_FAL_ANPVS4","m8_compact","G36A_camo","G36C","m8_holo_sd","G36C_camo","G36K_camo","G36_C_SD_camo","M16A2","M16A2GL","M4A1","M4A1_Aim"];
+_lmg_group = ["RPK_74","M249_EP1_DZ","M249_DZ","M240_DZ","m240_scoped_EP1_DZE","M249_m145_EP1_DZE","M60A4_EP1_DZE"];
+_sniper_group = ["M14_EP1","SVD_CAMO","SVD","VSS_Vintorez","DMR_DZ","M40A3","M24","M24_des_EP1","SVD_des_EP1","vil_M14G","vil_M21G","vil_M110sd","vil_SR25SD","vil_HK417s","vil_M110","vil_SR25","USSR_cheytacM200","USSR_cheytacM200_sd","FHQ_MSR_DESERT","FHQ_MSR_NV_DESERT","FHQ_MSR_NV_SD_DESERT","FHQ_MSR_SD_DESERT","FHQ_RSASS_SD_TAN","FHQ_RSASS_TAN","FHQ_XM2010_DESERT","FHQ_XM2010_NV_DESERT","FHQ_XM2010_NV_SD_DESERT","FHQ_XM2010_SD_DESERT","vil_SVDK","vil_SVD_63","vil_SVD_M","vil_SVD_N","vil_SVD_P21","vil_SVD_S","vil_SV_98","vil_SV_98_69","vil_SV_98_SD","gms_k98","gms_k98_knife","gms_k98_rg","gms_k98zf39"];
+_chainbullets_group = ["2000Rnd_762x51_M134","200Rnd_762x51_M240","100Rnd_127x99_M2","150Rnd_127x107_DSHKM"];
+
+// Rares
+_rares_group = ["ItemLockbox","30m_plot_kit","ItemLetter"];
+_rare_weapons_group = ["KSVK_DZE","MK_48_DZ","Pecheneg_DZ","M110_NVG_EP1","SCAR_H_LNG_Sniper_SD","M107_DZ","BAF_LRR_scoped"];
+
+// Legendaries
+_legend_group = ["PipeBomb","ItemRadio","ItemBriefcase100oz","ItemVault"];
+_chainsaw_group = ["Chainsaw","ChainsawB","ChainsawG","ChainsawP","AKS_74_GOSHAWK","FHQ_ACR_BLK_TWS","FHQ_ACR_WDL_TWS","FHQ_ACR_TAN_TWS","FHQ_ACR_SNW_TWS","m8_tws","Chainsaw","ChainsawB","ChainsawG","ChainsawP","AKS_74_GOSHAWK","FHQ_ACR_BLK_TWS","FHQ_ACR_WDL_TWS","FHQ_ACR_TAN_TWS","FHQ_ACR_SNW_TWS","m8_tws","Chainsaw","ChainsawB","ChainsawG","ChainsawP","AKS_74_GOSHAWK","FHQ_ACR_BLK_TWS","FHQ_ACR_WDL_TWS","FHQ_ACR_TAN_TWS","FHQ_ACR_SNW_TWS","m8_tws","FHQ_RSASS_TWS_TAN","FHQ_MSR_TWS_DESERT"];
+_gem_group = ["ItemObsidian","ItemCitrine","ItemTopaz","ItemRuby","ItemSapphire","ItemEmerald","ItemAmathyst"]; //You can use this if your server uses gems as currency
+
+
+MBC_REWARDLIST = [
+	//Reward List format:
+	//[type,item,quantity,raritylevel,rarity]
+	//		type - item type. Available options: 
+	//			magazine - any type of magazine and most general items (briefcases, cinder blocks, ammunition, etc)
+	//			weapon - any type of weapon, note that toolbelt items are also considered weapons in Arma
+	//			group_mag - a group of magazines. This is an array of items from which only 1 will be randomly picked
+	//			group_wep - a group of weapons. An array of weapons from which only 1 will be randomly picked
+	//			coins - this is for Zupa's Single Currency script only. Only use it if you have that script. If you don't do not use coins as a type for reward
+	//			script - this is an experimental feature for more advanced users. I haven't tested it thoroughly so use it at your own risk.
+	//				It was meant to work as a power-up rather than having an item as a reward. If you use "script" as a type, you must type the script's full path to the "item" field
+	//		item - class name of item. If type is group, insert the group's variable. Example: 30m_plot_pole, ItemHotwireKit, _sniper_group, _junk_group
+	//		quantity - number of items, if you set it to 0 while using group_wep it will only spawn the weapon without magazines. Example: 15 (in case item is ItemHotwireKit then it will give you 15 Hotwire Kits)
+	//		raritylevel - the level of rarity from 1 to 4 (1 = least rare, 4 = rarest), this is just visual for the UI
+	//		rarity - how likely it is for this item to be picked. 
+	//			Note: Rarity number is not necessarily in percentage form. Total sum of rarity does NOT have to equal 100.
+	//			For example, if you have 3 items all with 50 rarity then in reality they all have 33.3% chance of being picked.
+	//			But for the sake of the script's speed, the lower you have this number the faster it will run. Setting it to like 100mil would probably crash your server.
+	
+
+	// Bad luck (junk items with low possibility)
+	 ["group_mag",_junk_group,1,1,2]
+	,["group_mag",_food_group,1,1,2]
+	
+	// Common
+	,["group_wep",_assault_group,1,1,10]
+	,["group_wep",_lmg_group,1,1,10]
+	,["group_wep",_sniper_group,1,2,9]
+	,["group_mag",_common_group,1,2,12]
+	,["group_mag",_military_group,1,2,2]
+	,["group_mag",_medical_group,2,2,2]
+	,["group_mag",_vehicle_repair_group,2,2,2]
+	,["group_wep",_tools_group,0,2,6]
+	,["magazine","ItemGoldBar10oz",5,2,4]
+	,["magazine","PartPlywoodPack",15,2,5]
+	,["magazine","PartPlankPack",15,2,5]
+	
+	// Rare
+	,["group_wep",_rare_weapons_group,1,3,5]
+	,["group_mag",_rares_group,1,3,5]
+	,["magazine","ItemGoldBar10oz",10,3,3]
+	,["magazine","CinderBlocks",15,3,2]
+	,["magazine","PartPlywoodPack",30,3,2]
+	,["magazine","PartPlankPack",30,3,3]
+	,["magazine","ItemPole",30,3,2]
+	,["group_mag",_chainbullets_group,2,3,1]
+	
+	// Legendary
+	,["group_wep",_chainsaw_group,1,4,1]  
+	,["group_mag",_legend_group,1,4,1]
+	,["magazine","ItemBriefcase_Base",1,4,1]
+	,["magazine","CinderBlocks",30,4,1]
+	// If you have the Single Currency script here's an example of coins as a reward:
+	,["coins","Coins",100000,1,10] //Random being the amount of coins rewarded
+  ,["coins","Coins",250000,2,5] //Random being the amount of coins rewarded
+  ,["coins","Coins",500000,3,2] //Random being the amount of coins rewarded
+  ,["coins","Coins",1000000,4,1] //Random being the amount of coins rewarded
+
+];
