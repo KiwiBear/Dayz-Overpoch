@@ -167,12 +167,16 @@ FogMenu2 =
 DonatorMenu =
 [
 ["",true],
-        ["Spawn Crate 1", [2],  "", -5, [["expression", format[EXECscript5 ,"crate1.sqf"]]], "1", "1"],
-        ["Spawn Crate 2", [3],  "", -5, [["expression", format[EXECscript5 ,"crate2.sqf"]]], "1", "1"],
-        ["Spawn Crate 3", [4],  "", -5, [["expression", format[EXECscript5 ,"crate3.sqf"]]], "1", "1"],
-        ["Spawn Crate 4", [5],  "", -5, [["expression", format[EXECscript5 ,"crate4.sqf"]]], "1", "1"],
-        ["Spawn Crate 5", [6],  "", -5, [["expression", format[EXECscript5 ,"crate5.sqf"]]], "1", "1"],
-        ["Spawn Crate 6", [7],  "", -5, [["expression", format[EXECscript5 ,"crate6.sqf"]]], "1", "1"],
+        ["PVP Rnd 1 (5mtemp)", [2],  "", -5, [["expression", format[EXECscript5 ,"crate1.sqf"]]], "1", "1"],
+        ["PVP Rnd 2 (5mtemp)", [3],  "", -5, [["expression", format[EXECscript5 ,"crate2.sqf"]]], "1", "1"],
+        ["PVP Rnd 3 (5mtemp)", [4],  "", -5, [["expression", format[EXECscript5 ,"crate3.sqf"]]], "1", "1"],
+        ["PVP Rnd 4 (5mtemp)", [5],  "", -5, [["expression", format[EXECscript5 ,"crate4.sqf"]]], "1", "1"],
+        ["PVP Rnd 5 (5mtemp)", [6],  "", -5, [["expression", format[EXECscript5 ,"crate5.sqf"]]], "1", "1"],
+        ["PVP Rnd 6 (5mtemp)", [7],  "", -5, [["expression", format[EXECscript5 ,"crate6.sqf"]]], "1", "1"],
+        ["PVP Rnd 7 (5mtemp)", [8],  "", -5, [["expression", format[EXECscript5 ,"crate7.sqf"]]], "1", "1"],
+        ["PVP Rnd 8 (5mtemp)", [9],  "", -5, [["expression", format[EXECscript5 ,"crate8.sqf"]]], "1", "1"],
+        ["PVP Rnd 9 (5mtemp)", [10],  "", -5, [["expression", format[EXECscript5 ,"crate9.sqf"]]], "1", "1"],
+        ["PVP Rnd 10 (5mtemp)", [11],  "", -5, [["expression", format[EXECscript5 ,"crate10.sqf"]]], "1", "1"],
             ["", [-1], "", -5, [["expression", ""]], "1", "0"],
             ["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
