@@ -1,30 +1,30 @@
-_crate = "USVehicleBox" createVehicle (position player);
-_crate setVariable ["Mission",1,true];
+_pvpbox2 = "USVehicleBox" createVehicle (position player);
+_pvpbox2 setVariable ["Mission",1,true];
 
-clearWeaponCargoGlobal _crate;
-clearMagazineCargoGlobal _crate;
+clearWeaponCargoGlobal _pvpbox2;
+clearMagazineCargoGlobal _pvpbox2;
 
-_crate addMagazineCargoGlobal ["ItemVault", 3];
-_crate addMagazineCargoGlobal ["workbench_kit", 1];
-_crate addMagazineCargoGlobal ["ItemComboLock", 2];
+_pvpbox2 addWeaponCargoGlobal ["RH_m9", 1];
+_pvpbox2 addMagazineCargoGlobal ["15Rnd_9x19_M9", 20];
+_pvpbox2 addItemCargoGlobal ["ItemMachete", 1];
 
-_crate addMagazineCargoGlobal ["metal_floor_kit", 20];
-_crate addMagazineCargoGlobal ["cinder_garage_kit", 2];
-_crate addMagazineCargoGlobal ["CinderBlocks", 160];
-_crate addMagazineCargoGlobal ["cinder_wall_kit", 40];
-_crate addMagazineCargoGlobal ["MortarBucket", 40];
-_crate addMagazineCargoGlobal ["sandbag_nest_kit", 2];
-_crate addMagazineCargoGlobal ["forest_large_net_kit", 3];
-_crate addMagazineCargoGlobal ["ItemWoodStairs", 4];
-_crate addMagazineCargoGlobal ["ItemWoodStairsSupport", 1];
-_crate addMagazineCargoGlobal ["ItemWoodLadder", 5];
-_crate addMagazineCargoGlobal ["ItemPole", 6];
-_crate addMagazineCargoGlobal ["ItemTankTrap", 6];
+_pvpbox2 addMagazineCargoGlobal ["ItemBandage", 10];
+_pvpbox2 addMagazineCargoGlobal ["ItemBloodbag", 2];
+_pvpbox2 addMagazineCargoGlobal ["ItemMorphine", 10];
+_pvpbox2 addMagazineCargoGlobal ["ItemPainkiller", 10];
+_pvpbox2 addMagazineCargoGlobal ["ItemHeatPack", 2];
+_pvpbox2 addMagazineCargoGlobal ["ItemAntibiotic", 2];
 
-_crate attachto [player, [0,3,1.7]];
+
+_pvpbox2 addBackpackCargoGlobal ["DZ_British_ACU", 1];
+
+_pvpbox2 attachto [player, [0,3,1.7]];
 sleep 5;
-detach _crate;
-player reveal _crate;
+detach _pvpbox2;
+player reveal _pvpbox2;
+
+sleep 300;
+deleteVehicle _pvpbox2;
 
 /*INFO
 
