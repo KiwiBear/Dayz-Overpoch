@@ -4,6 +4,12 @@ class Category_493 {
 		buy[] ={2500000,"Coins"};
 		sell[] ={625000,"Coins"};
 	};
+	class ch_47f_baf {
+		type = "trade_any_vehicle";
+		buy[] ={2800000,"Coins"};
+		sell[] ={700000,"Coins"};
+	};
+
 	class UH1H_DZE {
 		type = "trade_any_vehicle";
 		buy[] ={600000,"Coins"};
